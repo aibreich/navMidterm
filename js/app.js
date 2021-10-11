@@ -4,7 +4,6 @@ const navMove = () => {
     
 
     burger.addEventListener('click', () => {
-       
         nav.classList.toggle('nav-active');
     });
 };
@@ -13,6 +12,9 @@ navMove();
 function changeSelected(page){
     console.log("Currently fectched page:"+ page);
     $(`.${page}Nav`).addClass("underline");
+    $('a').click(function(){
+        $('.nav-links').removeClass("nav-active");
+    });
 }
 // function changeColor(page){
 //     console.log("grabbing page id");
