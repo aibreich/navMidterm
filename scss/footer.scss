@@ -1,0 +1,57 @@
+footer {
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  z-index: 3;
+
+  //   background: rgb(7, 7, 4);
+  color: #000;
+  padding: 3em;
+  height: auto;
+  width: 100%;
+  margin-top: auto;
+
+  .footerContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .footerText {
+    font-size: 14px;
+
+    .footerHeader {
+      h1 {
+        font-size: 15px;
+        text-transform: capitalize;
+      }
+    }
+  }
+  .footerSocial {
+    margin-bottom: 20px;
+
+    li {
+      list-style: none;
+      vertical-align: top;
+      display: inline-block;
+      padding: 0 10px 0 10px;
+      transition: 1s;
+    }
+    li:hover {
+      font-size: 20px;
+    }
+    &__youtube {
+      color: purple;
+    }
+    &__twitch {
+      color: purple;
+    }
+    &__facebook {
+      color: purple;
+    }
+    &__instagram {
+      color: purple;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.about {
+  .about-content {
+    position: fixed;
+    height: calc(100vh - 90px);
+    bottom: 0;
+    padding: 35px;
+    width: 100%;
+    // display: flex;
+
+    .about-stripe {
+      margin-top: 100px;
+      width: 100%;
+      min-height: 300px;
+      padding: 20px;
+      background-color: rgb(184, 184, 184);
+      h1 {
+        font-size: 50px;
+      }
+
+      p {
+        width: 700px;
+      }
+
+      .learn-more {
+        width: 120px;
+        padding: 5px;
+        background-color: rgb(255, 255, 255);
+        border: 2px solid black;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 800px) {
+  .about {
+    .about-content {
+      .about-stripe {
+        p {
+          width: 380px;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 450px) {
+  .about {
+    .about-content {
+      .about-stripe {
+        p {
+          width: 280px;
+        }
+      }
+    }
+  }
+}
